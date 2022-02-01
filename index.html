@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            width: 100%;
+        }
+
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+<!-- HTML
+ EX1: Add an h1 tag with the name of your shop
+-->
+<h1>OG Phones, the only phones you can trust</h1>
+
+<!--
+EX2: Add a TABLE with the top 5 products of your shop +
+EX3: Insert for each product an image, a title, a description and a price+
+EX4: Add links to existing Amazon products for each item in the table
+-->
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>Image</th>
+    <th>Amazon link</th>
+  </tr>
+  <tr>
+    <td>Nokia</td>
+    <td>Nokia Model</td>
+    <td> <img src="./assets/ognokia.png" alt="Nokia phone" style="width:50px; height:100px; ;"> </td>
+    <td><a href="https://www.ebay.de/">Dont shop at amazon </a></td>
+  </tr>
+  <tr>
+    <td>Apple</td>
+    <td>the first iphone</td>
+    <td> <img src="./assets/ogIphone.png" alt="Iphone" style="width:50px; height:100px; ;" > </td>
+    <td> <a href="https://www.ebay.de/">Dont shop at amazon </a> </td>
+  </tr>
+  <tr>
+    <td>Samsung</td>
+    <td>random one</td>
+    <td> <img src="./assets/Samsung-GALAXY-Nexus-1.jpeg" alt="Samsung" style="width:80px; height:100px; ;" > </td>
+    <td><a href="https://www.ebay.de/">Dont shop at amazon </a></td>
+  </tr>
+  <tr>
+    <td>Sony</td>
+    <td>soni ericsson</td>
+    <td> <img src="./assets/ogSonyEricsson.png" alt="Best phone ever made" style="width:70px; height:100px; ;" > </td>
+    <td><a href="https://www.ebay.de/">Dont shop at amazon </a></td>
+  </tr>
+  <tr>
+    <td>BlackBerry</td>
+    <td>OG model</td>
+    <td> <img src="./assets/ogBlackBerry.png" alt="Blackberry" style="width:80px; height:100px; ;" > </td>
+    <td><a href="https://www.ebay.de/">Dont shop at amazon </a></td>
+  </tr>
+</table>
+
+<!-- 
+EX6: Add a message board where the user can type a message in it (no real posting/saving features required!)
+-->
+
+<div>
+    <h4>Leave a comment before you go</h4>
+    <input type="message" style="width:400px; height: 20px;" >
+    <button type="onClick"> Send feedback </button>
+</div>
+
+<!-- EX5: Add a footer with the address and the name of your shop -->
+<footer>
+    <p></p>
+    <p>OG Phones Inc. fakeroad 33 XN701, NY</p>
+</footer>
+    
+
+
+
+<script>
+// EX7: Write a function to change the h1 text to something else
+    let changeh1 = function() {
+        let h1node = document.getElementsByTagName("h1")
+        h1node[0].innerText = "OG Burner Phones"
+    }
+// EX8: Write a function to change the page background color  
+
+    function changeColor() {
+        let page = document.getElementsByTagName("body")
+        page[0].style.backgroundColor = 'Yellow'
+
+    }
+// EX9: Write a function to change the footer address with a fake one
+    function changeFooter(){
+        let fakeFooter = document.getElementsByTagName("footer")
+        fakeFooter[0].innerText = "more fake info"
+    }
+</script>
+
+<!-- JavaScript
+
+
+
+
+
+
+
+EX10: Write a function to add a CSS class to every Amazon link
+
+EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+
+EX12: Write a function to color the price of the products in a different one every time it's invoked
+-->
+</body>
+</html>
